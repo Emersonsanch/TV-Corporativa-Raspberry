@@ -25,7 +25,7 @@ define('UPLOAD_DIR', __DIR__ . '/public/uploads/');
 define('UPLOAD_URL', '/public/uploads/');
 
 // --- Configurações de Autenticação ---
-define('ADMIN_EMAIL', 'admin@ingaflex.com');
+define('ADMIN_EMAIL', 'admin@portal.com');
 define('ADMIN_PASSWORD_HASH', '$2y$10$xabPUukxkNAbIvmT.wqR3.v6TpYHCZP/iUBegixeU.XJYZSAT6upi'); // Senha: admin123
 
 // --- Inicialização de Sessão ---
