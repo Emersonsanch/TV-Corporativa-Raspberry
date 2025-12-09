@@ -1,0 +1,44 @@
+mkdir -p /home/pi/.config/autostart
+
+nano /home/pi/.config/autostart/tv.desktop
+
+
+
+[Desktop Entry]
+Type=Application
+Name=TV Corporativa
+Exec=firefox --kiosk http://192.168.0.11/tv/tv-token-12345
+X-GNOME-Autostart-enabled=true
+
+
+
+chmod +x /home/pi/.config/autostart/tv.desktop
+
+
+sudo mkdir -p /etc/firefox/policies
+
+sudo nano /etc/firefox/policies/policies.json
+
+
+{
+  "policies": {
+    "DisableTelemetry": true,
+    "DisableFirefoxStudies": true,
+    "DisableFirefoxAccounts": true,
+    "DisablePocket": true,
+    "DontCheckDefaultBrowser": true,
+    "DisableProfileImport": true,
+    "OverrideFirstRunPage": "",
+    "OverridePostUpdatePage": "",
+	"DisableHardwareAcceleration": true,
+    "DisableTelemetry": true,
+    "Homepage": {
+      "URL": "http://192.168.0.11/tv/tv-token-12345",
+      "Locked": true
+    }
+  }
+}
+
+
+
+sudo reboot
