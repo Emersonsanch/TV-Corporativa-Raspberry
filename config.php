@@ -11,7 +11,7 @@ define('DB_CHARSET', 'utf8mb4');
 
 // --- Configurações da Aplicação ---
 define('APP_NAME', 'TV Corporativa INGAFLEX');
-define('APP_URL', 'http://192.168.0.11');
+define('APP_URL', 'http://localhost');
 define('ADMIN_PATH', '/admin');
 define('API_PATH', '/api');
 define('TV_PATH', '/tv');
